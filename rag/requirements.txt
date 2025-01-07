@@ -1,0 +1,11 @@
+unstructured[pdf]
+fastapi
+pydantic
+python-multipart
+hypercorn[trio]
+Werkzeug
+langchain-openai
+langchain-community
+langchain_huggingface
+faiss-gpu-cu12
+einops
