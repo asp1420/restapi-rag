@@ -38,9 +38,9 @@ If both API keys are configured, the OpenAI service will be used by default.
 
 If you choose the Hugging Face LLM chat model, set the `HF_HOME` variable to `models`, meaning the models will be stored in the `rag/models` directory. This setup ensures that models used by the app are separated and ready for Docker containerization.
 
-## Installation and execution
+## ⚙️ Installation and execution
 
-### Docker
+### 📦 Docker
 
 Follow these steps to build the Docker image and run the container:
 
@@ -58,7 +58,7 @@ docker build -t [image name] rag/
 docker run --rm --env-file rag/.env --gpus all --volume [local volume path]:/api/db --name [container name] [image name]
 ```
 
-### Locally
+### 💻 Locally
 
 To run the app locally, follow these steps:
 
