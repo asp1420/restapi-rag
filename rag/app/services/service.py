@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from abc import ABC, abstractmethod
+from abc import ABC
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from ..utils.logger import Logger
@@ -41,7 +41,6 @@ class Service(ABC):
     def postprocess(self, data: Any | None) -> Any | None:
         return data
 
-    @abstractmethod
     def _load_llmchat(self)  -> Any | None: ...
 
     def _load_embedding(self) -> HuggingFaceEmbeddings:
